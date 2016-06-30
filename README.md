@@ -6,6 +6,8 @@ This is a plugin for the [Atom Tool Bar](https://atom.io/packages/tool-bar) pack
 
 My custom tool-bar plugin that adds an atom toolbar with functions that I use everyday.
 
+![toolbarbasic](https://cloud.githubusercontent.com/assets/6761721/16497729/60d6d946-3ef0-11e6-8957-f0229e26d531.png)
+
 ## Buttons
 
 * **Open file**
