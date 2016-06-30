@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git+https://github.com/AlexNewson/tool-bar-basic"
   },
+  "bugs": {
+    "url": "https://github.com/AlexNewson/tool-bar-basic/issues"
+  },
   "keywords": [
     "toolbar",
     "tool-bar",
