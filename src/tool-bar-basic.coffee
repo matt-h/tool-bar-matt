@@ -167,6 +167,11 @@ module.exports =
                 'icon': 'markdown'
                 'callback': 'markdown-preview:toggle'
                 'tooltip': 'Markdown Preview'
+        if atom.packages.loadedPackages['markdown-preview-plus']
+            @toolBar.addButton
+                'icon': 'markdown'
+                'callback': 'markdown-preview:toggle'
+                'tooltip': 'Markdown Preview'
         if atom.packages.loadedPackages['atom-html-preview']
             @toolBar.addButton
                 'icon': 'globe'
