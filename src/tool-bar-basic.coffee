@@ -174,12 +174,12 @@ module.exports =
                 'iconset': 'fa'
 
         @toolBar.addSpacer()
-        if atom.packages.loadedPackages['markdown-preview']
+        if atom.packages.loadedPackages['markdown-preview-plus']
             @toolBar.addButton
                 'icon': 'markdown'
-                'callback': 'markdown-preview:toggle'
+                'callback': 'markdown-preview-plus:toggle'
                 'tooltip': 'Markdown Preview'
-        if atom.packages.loadedPackages['markdown-preview-plus']
+        else
             @toolBar.addButton
                 'icon': 'markdown'
                 'callback': 'markdown-preview:toggle'
