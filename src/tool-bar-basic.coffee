@@ -40,6 +40,18 @@ module.exports =
         @toolBar.addSpacer()
 
         @toolBar.addButton
+            'icon': 'chevron-right'
+            'callback': 'pane:split-right'
+            'tooltip': 'Split Right'
+
+        @toolBar.addButton
+            'icon': 'chevron-down'
+            'callback': 'pane:split-down'
+            'tooltip': 'Split Down'
+
+        @toolBar.addSpacer()
+
+        @toolBar.addButton
             'iconset': 'fa'
             'icon': 'arrows-alt'
             'tooltip': 'Toggle Fullscreen'
