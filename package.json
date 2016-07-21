@@ -2,7 +2,7 @@
   "name": "tool-bar-basic",
   "description": "An essential tool-bar that adds many commonly used actions",
   "main": "./src/tool-bar-basic",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,13 +21,13 @@
     "menu"
   ],
   "dependencies": {
-      "atom-package-deps": "^3.0.7"
+    "atom-package-deps": "^3.0.7"
   },
   "engines": {
-      "atom": ">0.50.0"
+    "atom": ">0.50.0"
   },
   "package-deps": [
-      "tool-bar"
+    "tool-bar"
   ],
   "consumedServices": {
     "tool-bar": {
