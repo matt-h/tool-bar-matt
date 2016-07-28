@@ -150,6 +150,35 @@ module.exports =
                 'tooltip' : 'Git plus'
                 'iconset' : 'devicon'
 
+        if atom.packages.loadedPackages['git-time-machine']
+            @toolBar.addButton
+                'icon' : 'map'
+                'callback' : 'git-time-machine:toggle'
+                'tooltip' : 'git-time-machine'
+                'iconset' : 'ion'
+
+        if atom.packages.loadedPackages['merge-conflicts']
+            @toolBar.addButton
+                'tooltip' : 'Merge Conflicts'
+                'dependency' : 'merge-conflicts'
+                'callback' : 'merge-conflicts:detect'
+                'icon' : 'code-fork'
+                'iconset' : 'fa'
+
+        if atom.packages.loadedPackages['git-status']
+            @toolBar.addButton
+                'tooltip' : 'Git status'
+                'dependency' : 'git-status'
+                'callback' : 'git-status:toggle'
+                'icon' : 'git-compare'
+
+        if atom.packages.loadedPackages['open-on-github']
+            @toolBar.addButton
+                'tooltip' : 'Open on Github'
+                'dependency' : 'open-on-github'
+                'callback' : 'open-on-github:file'
+                'icon' : 'octoface'
+
         if atom.packages.loadedPackages['script']
             @toolBar.addSpacer()
             @toolBar.addButton
