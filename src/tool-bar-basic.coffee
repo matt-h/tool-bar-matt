@@ -189,6 +189,11 @@ module.exports =
                 'icon': 'globe'
                 'callback': 'atom-html-preview:toggle'
                 'tooltip': 'HTML Preview'
+        if atom.packages.loadedPackages['atom-live-server']
+            @toolBar.addButton
+                'icon': 'globe'
+                'callback': 'atom-live-server:start-3000'
+                'tooltip': 'HTML Preview'
 
         @toolBar.addSpacer()
         @toolBar.addButton
