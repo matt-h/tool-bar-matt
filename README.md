@@ -1,4 +1,4 @@
-# Toolbar Basic - a tool-bar plugin
+# Toolbar Matt - a tool-bar plugin
 
 ## About
 
@@ -6,7 +6,7 @@ This is a plugin for the [Atom Tool Bar](https://atom.io/packages/tool-bar) pack
 
 My custom tool-bar plugin that adds an atom toolbar with functions that I use everyday.
 
-![toolbarbasic](https://cloud.githubusercontent.com/assets/6761721/16498220/98136094-3ef2-11e6-83d0-1392d21039ba.png)
+Forked from https://github.com/AlexNewson/tool-bar-basic and https://github.com/05tb/tool-bar-basic.
 
 ## Buttons
 
@@ -54,12 +54,12 @@ First you have to install the `tool-bar` package which is required:
 apm install tool-bar
 ```
 
-Then you install the `tool-bar-basic` package:
+Then you install the `tool-bar-matt` package:
 
 ```bash
-apm install tool-bar-basic
+apm install tool-bar-matt
 ```
 
 ## License
 
-[The MIT License](https://github.com/AlexNewson/tool-bar-basic/LICENSE.md)
+[The MIT License](https://github.com/matt-h/tool-bar-matt/LICENSE.md)

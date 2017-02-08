@@ -1,23 +1,21 @@
 {
-  "name": "tool-bar-basic",
-  "description": "An essential tool-bar that adds many commonly used actions",
-  "main": "./src/tool-bar-basic",
+  "name": "tool-bar-matt",
+  "description": "A tool-bar that adds many commonly used actions",
+  "main": "./src/tool-bar-matt",
   "version": "1.2.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexNewson/tool-bar-basic"
+    "url": "git+https://github.com/matt-h/tool-bar-matt"
   },
   "bugs": {
-    "url": "https://github.com/AlexNewson/tool-bar-basic/issues"
+    "url": "https://github.com/matt-h/tool-bar-matt/issues"
   },
   "keywords": [
     "toolbar",
     "tool-bar",
-    "tool-bar-basic",
     "tool",
     "bar",
-    "basic",
     "menu"
   ],
   "dependencies": {
