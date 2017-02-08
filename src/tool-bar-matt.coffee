@@ -11,69 +11,11 @@ module.exports =
             tooltip: 'Open File'
             iconset: 'ion'
 
-        @toolBar.addButton
-            'icon': 'folder'
-            'callback': 'application:open-folder'
-            'tooltip': 'Open Folder'
-            'iconset': 'ion'
-
-        @toolBar.addButton
-            'icon': 'archive'
-            'callback': 'core:save'
-            'tooltip': 'Save File'
-            'iconset': 'ion'
-
         if atom.packages.loadedPackages['project-manager']
             @toolBar.addButton
                 'icon': 'file-submodule'
                 'tooltip': 'List projects'
                 'callback': 'project-manager:list-projects'
-
-        @toolBar.addSpacer()
-
-        @toolBar.addButton
-            'icon': 'search'
-            'iconset': 'fa'
-            'tooltip': 'Find in Buffer'
-            'callback': 'find-and-replace:toggle'
-
-        @toolBar.addSpacer()
-
-        @toolBar.addButton
-            'icon': 'chevron-right'
-            'callback': 'pane:split-right'
-            'tooltip': 'Split Right'
-
-        @toolBar.addButton
-            'icon': 'chevron-down'
-            'callback': 'pane:split-down'
-            'tooltip': 'Split Down'
-
-        @toolBar.addSpacer()
-
-        @toolBar.addButton
-            'iconset': 'fa'
-            'icon': 'arrows-alt'
-            'tooltip': 'Toggle Fullscreen'
-            'callback': 'window:toggle-full-screen'
-
-        @toolBar.addButton
-            'icon': 'list'
-            'callback': 'tree-view:toggle'
-            'tooltip': 'Toggle Sidebar'
-            'iconset': 'fa'
-
-        if atom.packages.loadedPackages['minimap']
-            @toolBar.addButton
-                'icon': 'eye'
-                'tooltip': 'Toggle Minimap'
-                'callback': 'minimap:toggle'
-
-        if atom.packages.loadedPackages['expose']
-            @toolBar.addButton
-                'icon': 'browser'
-                'tooltip': 'Toggle Exposé'
-                'callback': 'expose:toggle'
 
         @toolBar.addSpacer()
 
@@ -107,31 +49,6 @@ module.exports =
                 'callback': 'atom-beautify:beautify-editor'
                 'tooltip': 'Beautify'
                 'iconset': 'fa'
-
-        if atom.packages.loadedPackages['term3']
-            @toolBar.addSpacer()
-            @toolBar.addButton
-                'icon': 'terminal'
-                'callback': 'term3:open-split-down'
-                'tooltip': 'Term3 Split Down'
-        else if atom.packages.loadedPackages['term2']
-            @toolBar.addSpacer()
-            @toolBar.addButton
-                'icon': 'terminal'
-                'callback': 'term2:open-split-down'
-                'tooltip': 'Term2 Split Down'
-        else if atom.packages.loadedPackages['terminal-plus']
-            @toolBar.addSpacer()
-            @toolBar.addButton
-                'icon': 'terminal'
-                'callback': 'terminal-plus:toggle'
-                'tooltip': 'Toggle Terminal-plus'
-        else if atom.packages.loadedPackages['platformio-ide-terminal']
-            @toolBar.addSpacer()
-            @toolBar.addButton
-                'icon': 'terminal'
-                'callback': 'platformio-ide-terminal:toggle'
-                'tooltip': 'Toggle platformio-ide-terminal'
 
         if atom.inDevMode()
 
